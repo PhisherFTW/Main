@@ -34,6 +34,12 @@
     grid-area: personal;
 }
 
+
+
+
+
+
+
 :root {
     --background: #19171E;
     --box-background: #25222c;
@@ -72,6 +78,7 @@ body {
     background-color: var(--background);
     color: white;
 }
+
 
 
 main {
@@ -152,9 +159,6 @@ h1 {
     align-items: center;
 }
 
-
-
-
 .acc-btn {
     cursor: pointer;
     transition: all 0.5s linear;
@@ -184,9 +188,6 @@ h1 {
     color: var(--pink);
     font-weight: bold;
 }
-
-
-
 
 .collapsible {
     cursor: pointer;
@@ -263,7 +264,70 @@ h1 {
 }
 
 
+.nav-img {
+    width: 3rem;
+    border-radius: 25px;
+}
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: space-between;
+    align-items: center;
+    height: 3rem;
+    margin: 0;
+}
+.nav-link {
+    list-style-type: none;
+    margin-left: 10px;
 
+}
+.nav-hover:hover {
+    color: var(--pink);
+}
+.heading {
+    color: var(--pink);
+}
+
+.box2 {   
+    border-radius: 25px;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: var(--box-background);
+}
+.bg-colour {
+    display: grid;
+    justify-items: stretch;
+    align-items: stretch;
+    justify-content: stretch;
+    grid-template-areas: 
+    'head head head head head head'
+    'bio review review review review review';
+    color: var(--text-gray);
+    column-gap: 20px;
+    background-color: var(--background);
+}
+
+.middle {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.head { 
+    display: grid;
+    grid-area: head;
+}
+
+.bio { 
+    display: grid;
+    grid-area: bio; 
+}
+
+.reviews { 
+    display: grid;
+    grid-area: review; 
+}
 
 @media only screen and (max-width: 1300px) {
     main {
